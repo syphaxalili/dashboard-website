@@ -1873,6 +1873,7 @@ div .welcome {
     border-radius: var(--border-radius-main);
     position: relative;
     transition: var(--transition-main);
+    cursor: pointer;
 }
 
 .profile>.details>div>.info-details label span::before {
@@ -2277,6 +2278,12 @@ div .welcome {
     color: #666;
     background-color: #eee;
     cursor: pointer;
+    transition: var(--transition-main);
+}
+
+.wrapper .friend .contact-icons i:hover {
+    color: white;
+    background-color: var(--color-blue);
 }
 
 .wrapper .friend .header {
