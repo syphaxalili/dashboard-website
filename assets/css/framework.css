@@ -1,0 +1,79 @@
+@import url('master.css');
+
+/* Start Components */
+/* -------- Start Main Title */
+.main-title {
+    width: fit-content;
+    margin-bottom: 50px;
+    font-size: 2.2rem;
+    position: relative;
+}
+
+.main-title::before,
+.main-title::after {
+    content: "";
+    height: 3px;
+    border-radius: 6px;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+.main-title::before {
+    width: 75%;
+    background-color: white;
+}
+
+.main-title::after {
+    width: 30%;
+    background-color: black;
+}
+
+@media (max-width:767px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+}
+/* -------- End Main Title */
+
+.btn-shape {
+    display: block;
+    width: fit-content;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: var(--border-radius-main);
+    cursor: pointer;
+    transition: var(--transition-main);
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* End Components */
+
+
+/* Start Animations */
+@keyframes blue-white {
+    0%, 100% {
+        background-color: white;
+    }
+    50% {
+        background-color: var(--color-blue);
+    }
+}
+
+@keyframes up-and-down {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+/* End Animations */
